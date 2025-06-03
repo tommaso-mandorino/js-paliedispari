@@ -34,3 +34,21 @@ function isPalindrome(string) {
     }
 
 }
+
+// Ask the user the word he wants to check for palindromicity
+const userWord = prompt('Inserisci la parola di cui vuoi verificare la palindromicità:');
+
+// IF user typed word is palindrome
+if (isPalindrome(userWord)) {
+
+    // Alert the word IS palindrome
+    alert(`La parola ${userWord} che hai inserito È palindroma.`);
+
+}
+// ELSE
+else {
+
+    // Alert the word is NOT palindrome
+    alert(`La parola ${userWord} che hai inserito NON è palindroma.`)
+
+}
