@@ -37,3 +37,29 @@ const numberSum = userNumber + computerNumber;
 
 // Check if number sum is even or odd and converts result in italian to match user choice
 const numberEvenOrOdd = isEvenOrOdd(numberSum) === 'even' ? 'pari' : 'dispari';
+
+// IF user choice is equal to even/odd sum result
+if (userChoice === numberEvenOrOdd) {
+
+    // Alert user win
+    alert(`Hai VINTO!
+           Avevi scelto ${userChoice.toUpperCase()}
+           e la somma del tuo numero (${userNumber})
+           e del numero del computer generato casualmente (${computerNumber})
+           è ${numberSum}, che è un numero ${userChoice.toUpperCase()}!`
+         );
+
+}
+// ELSE
+else
+{
+
+    // Alert user loose
+    alert(`Hai PERSO!
+           Avevi scelto ${userChoice.toUpperCase()},
+           ma la somma del tuo numero (${userNumber})
+           e del numero del computer generato casualmente (${computerNumber})
+           è ${numberSum}, che NON è un numero ${userChoice.toUpperCase()}!`
+         );
+
+}
