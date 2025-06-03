@@ -15,3 +15,22 @@ function reverseString(string) {
     return reversedString;
 
 }
+
+// Check palindromicity function declaration
+function isPalindrome(string) {
+
+    // Call a function to reverse a string and store its return value in a constant
+    const reversedString = reverseString(string);
+
+    // IF original string is equal to its reversed form
+    if (string === reversedString) {
+
+        return true;
+
+    } else {
+
+        return false;
+
+    }
+
+}
