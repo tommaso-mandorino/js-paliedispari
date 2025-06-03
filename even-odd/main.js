@@ -22,3 +22,18 @@ function isEvenOrOdd(number) {
     }
 
 }
+
+// Ask the user tho choose even or odd
+const userChoice = prompt('Scegli pari o dispari:');
+
+// Ask the user to choose his number
+const userNumber = Number(prompt('Inserisci il tuo numero:'));
+
+// Generate a randome number between 1 and 5 for the computer
+const computerNumber = randomNumber(1, 5);
+
+// Sum user and computer numbers
+const numberSum = userNumber + computerNumber;
+
+// Check if number sum is even or odd and converts result in italian to match user choice
+const numberEvenOrOdd = isEvenOrOdd(numberSum) === 'even' ? 'pari' : 'dispari';
